@@ -10,15 +10,17 @@ const initialState = {
     user: null,
 };
 
-const API_URL = "http://localhost:3002/users"
+const API_URL = "http://localhost:3001/"
 
 export const UserContext = createContext(initialState);
 
 export const UserProvider = ({ children }) => {
     const [state, dispatch] = useReducer(UserReducer, initialState);
+    
+    
     const login = async (user) => {
         try {
-            const res = await axios.post(API_URL + "/login", user);
+            const res = await axios.post(API_URL + "users/login", user);
             dispatch({
                 type: "LOGIN",
                 payload: res.data,
@@ -31,7 +33,7 @@ export const UserProvider = ({ children }) => {
         }
     };
     return (
-        <UserContext.Provider
+        <UserContext.Provider 
             value={{
                 token: state.token,
                 user: state.user,
