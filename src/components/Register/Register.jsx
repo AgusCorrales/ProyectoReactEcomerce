@@ -1,17 +1,22 @@
 import { Button, Form, Input } from 'antd';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../contex/UserContex/UserState';
 
 const Register = () => {
+const { register } = useContext(UserContext);
+const [form] = Form.useForm();
 
 const navigate = useNavigate();
 
-const onFinish = (values) => {
+const onFinish = async (values) => {
     navigate("/login")
-    console.log('Success:', values);
-};
-
-
+    try {
+        await register(values);
+       } catch (error) {
+        console.log(error);
+    }
+    };
 
 return (
     <div>
