@@ -1,30 +1,83 @@
-.profile-container {
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+    .profile-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #f0f2f5;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 800px;
-    margin-top: 80px; // Ajusta según la altura de tu encabezado
+    margin-top: 5rem; 
+  
+    .profile-info {
+      width: 100%;
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      margin: 10px;
+      padding: 2rem;
+      margin: 10px 0;
+  
+      .profile-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        h3 {
+          margin: 0;
+          color: #333;
+        }
+      }
+    }
+  
+    .orders-container {
+      h4 {
+        color: #000;
+      }
+  
+      .orders {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+  
+        .order-card {
+          background: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 1rem;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          color: black;
+  
+          &:hover {
+            transform: translateY(-5px);
+          }
+  
+          h5 {
+            margin: 0;
+            color: #333;
+          }
+  
+          ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0.5rem 0;
+  
+            li {
+              margin: 0.5rem 0;
+            }
+          }
+  
+          p {
+            font-weight: bold;
+            color: #e82127;
+            margin-top: auto; 
+          }
+        }
+      }
+    }
   }
   
-  .profile-info {
-    margin-bottom: 1rem; // Espacio entre el perfil y la lista de pedidos
-  }
-
-.order-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; // Centrar las tarjetas horizontalmente
-}
-
-.order-card {
-  margin: 0.5rem; // Espacio entre las tarjetas
-}
-
-.order-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Efecto de sombra al pasar el mouse */
-}

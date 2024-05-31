@@ -3,6 +3,7 @@ import { ProductContext } from '../../contex/ProductContext/ProductState';
 import { Button, Empty, Result } from 'antd';
 import { Link } from 'react-router-dom';
 import orderService from '../../service/OrderServices';
+import './Cart.scss';
 
 const Cart = () => {
   const { cart, clearCart } = useContext(ProductContext);
@@ -28,6 +29,7 @@ const Cart = () => {
 
   if (orderCreated) {
     return (
+        <div className="cart-container empty-container">
       <Result
         status="success"
         title="Purchase Successfully"
@@ -40,11 +42,13 @@ const Cart = () => {
           </Button>,
         ]}
       />
+      </div>
     );
   }
 
   if (cart.length === 0) {
     return (
+        <div className="cart-container empty-container">
         <Empty
         image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
         imageStyle={{
@@ -53,21 +57,26 @@ const Cart = () => {
       >
         <Button type="primary"><Link to="/product">Create Now</Link></Button>
       </Empty>
+      </div>
     );
 }
 
   return (
-    <div>
+    <div className="cart-container">
+    <div className="cart-actions">
       <button onClick={clearCart}>Clear Cart</button>
       <button onClick={handleCreateOrder}>Create Order</button>
+    </div>
+    <div className="product-list">
       {cart.map((product, index) => (
-        <div key={index}>
+        <div className="product-card" key={index}>
           <h2>{product.name}</h2>
-          <p>{product.price}</p>
+          <p>${product.price}</p>
         </div>
       ))}
     </div>
-  );
+  </div>
+);
 };
 
 export default Cart;

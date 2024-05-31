@@ -32,31 +32,33 @@ const Profile = () => {
     };
     return (
         <div className="profile-container">
-        <Card className="profile-card">
-          <h3>Profile: </h3>
-          <p><UserOutlined/> {user.name} {user.lastname}</p>
-          <p><MailOutlined/> {user.email}</p>
+        <Card className="profile-info">
+        <div className="profile-details">
+          <h3><UserOutlined /> {user.name} {user.lastname}</h3>
+          <h3><MailOutlined /> {user.email}</h3>
+        </div>
         </Card>
-        <div className="order-list">
-          <h4>Orders:</h4>
+        <div className="orders-container">
+        <h4>Orders:</h4>
+        <div className="orders">
           {user.Orders.map(order => (
-            <Card className="order-card" key={order.id}>
+            <div className="order-card" key={order.id}>
               <h5>Order: {order.id}</h5>
               <ul>
                 {order.Products.map(product => (
                   <li key={product.id}>
-                    {product.name} ${product.price}
+                    {product.name} - ${product.price}
                   </li>
                 ))}
               </ul>
               <p>Total: ${calculateTotal(order.Products)}</p>
-            </Card>
+            </div>
           ))}
         </div>
       </div>
-    );
-      
-    };
+    </div>
+  );
+};
             
 
 
