@@ -1,0 +1,30 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    margin-top: 80px; // Ajusta según la altura de tu encabezado
+  }
+  
+  .profile-info {
+    margin-bottom: 1rem; // Espacio entre el perfil y la lista de pedidos
+  }
+
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Centrar las tarjetas horizontalmente
+}
+
+.order-card {
+  margin: 0.5rem; // Espacio entre las tarjetas
+}
+
+.order-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Efecto de sombra al pasar el mouse */
+}

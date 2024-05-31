@@ -34,7 +34,10 @@ export const UserProvider = ({ children }) => {
                 payload: res.data,
             });
             if (res.data) {
+                console.log(user);
+                localStorage.setItem('User', JSON.stringify(res.data.user))
                 localStorage.setItem("token", res.data.token);
+                
             }
         } catch (error) {
             console.error(error);
@@ -51,6 +54,7 @@ export const UserProvider = ({ children }) => {
           dispatch({
             type:"GET_USER_INFO",
             payload:res.data
+            
           })
         } catch (error) {
           console.error(error);
@@ -66,6 +70,7 @@ export const UserProvider = ({ children }) => {
             })
             if(res.data){
                 localStorage.removeItem("token")
+                localStorage.removeItem("User")
                 dispatch({
                     type:"LOGOUT"
                 })

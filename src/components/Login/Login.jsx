@@ -6,17 +6,18 @@ import { useContext } from 'react';
 
 
 const Login = () => {
-  const {login} = useContext(UserContext)
+  const {login, user} = useContext(UserContext)
   const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
 
   const navigate = useNavigate()
-  const onFinish = (values) => {console.log(values);
-    login(values)
+  const onFinish = async (values) => {
+    await login(values)
+    console.log(user);
     navigate("/profile")
      notification.success({
        message: 'Welcome'
     });
-  };
+  }
 
   const onFinishFailed = (values) => {
     console.log(values);
@@ -82,7 +83,9 @@ const Login = () => {
           <Button type="primary" htmlType="submit">
             Submit
           </Button>
+          Or <a href="/register">Register now!</a>
         </Form.Item>
+
       </Form>
     </div>
   );

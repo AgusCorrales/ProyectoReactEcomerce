@@ -1,3 +1,5 @@
+import products from "../ProductContext/ProductReducer";
+
 const users = (state, action) => {
     switch (action.type) {
       case "LOGIN":
@@ -9,6 +11,8 @@ const users = (state, action) => {
           return {
             ...state,
             user: action.payload.user,
+            orders: action.payload.Orders,
+            products: action.payload.Products
           };
           case "LOGOUT":
             return {
