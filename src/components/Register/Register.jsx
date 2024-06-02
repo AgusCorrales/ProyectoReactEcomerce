@@ -2,6 +2,7 @@ import { Button, Form, Input } from 'antd';
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../contex/UserContex/UserState';
+import './Register.scss'
 
 const Register = () => {
 const { register } = useContext(UserContext);
@@ -19,7 +20,7 @@ const onFinish = async (values) => {
     };
 
 return (
-    <div>
+    <div className='form-container'>
       <Form
         name="basic"
         labelCol={{

@@ -1,0 +1,7 @@
+.form-container {
+    display: flex;
+    justify-content: center; // Centra horizontalmente
+    align-items: center; // Centra verticalmente
+    height:100vh; // Hace que el contenedor ocupe toda la altura de la ventana
+    margin: 0; // Resetea cualquier margen que pudiera interferir
+}

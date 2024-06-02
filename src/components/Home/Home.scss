@@ -1,33 +1,32 @@
+
 .giphy-container {
     position: relative;
     display: inline-block;
-    margin: 5px;
-    margin-top: 100px;
-
+    margin: 10px;
+    margin-top: 50px;
+  
     iframe {
       display: block;
-      pointer-events: none;
-      border: 1px solid black;  
+      pointer-events: none; 
     }
   
     .button {
-      --width: 80px;
-      --height: 30px;
+      --width: 50px;
+      --height: 20px; 
       --tooltip-height: 35px;
       --tooltip-width: 90px;
       --gap-between-tooltip-to-button: 18px;
       --button-color: #222;
       --tooltip-color: #fff;
-  
       width: var(--width);
       height: var(--height);
       background: var(--button-color);
       position: absolute;
-      bottom: 10px;
+      bottom: 2px;
       right: 10px;
       text-align: center;
       border-radius: 0.45em;
-      font-family: "Arial";
+      font-family: "Roboto";
       transition: 0.3s;
       cursor: pointer;
   
@@ -36,7 +35,6 @@
         content: attr(data-tooltip);
         width: var(--tooltip-width);
         height: var(--tooltip-height);
-        background-color: #555;
         font-size: 0.9rem;
         color: #fff;
         border-radius: .25em;
@@ -104,7 +102,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        top: 0;
+        top: -10px;
         transition: top 0.5s;
       }
   
@@ -123,4 +121,7 @@
       }
     }
   }
+
+
+  
   

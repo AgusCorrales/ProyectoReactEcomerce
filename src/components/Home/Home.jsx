@@ -1,15 +1,42 @@
 import React from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom'
+import { Carousel } from 'antd';
 
 const Home = () => {
+      const contentStyle = {
+        marginTop: '10px',
+        height: '160px',
+        lineHeight: '160px',
+      };
   return (
     <div>
+      <div>
+      <Carousel autoplay>
+      <div>
+        <img src='https://images.pexels.com/photos/5632378/pexels-photo-5632378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' 
+        style={{ ...contentStyle, objectFit: 'cover', width: '100%', height: '500px', marginTop:'50px'}}></img>
+      </div>
+      <div>
+      <img src='https://images.pexels.com/photos/139038/pexels-photo-139038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' 
+      style={{ ...contentStyle, objectFit: 'cover', width: '100%', height: '500px', marginTop:'50px' }}></img>
+      </div>
+      <div>
+      <img src='https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' 
+      style={{ ...contentStyle, objectFit: 'cover', width: '100%', height: '500px', marginTop:'50px' }}></img>
+      </div>
+      <div>
+      <img src='https://images.pexels.com/photos/5624976/pexels-photo-5624976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' 
+      style={{ ...contentStyle, objectFit: 'cover', width: '100%', height: '500px', marginTop:'50px' }}></img>
+      </div>
+    </Carousel>
+       </div>
+       
         <div className="giphy-container">
           <iframe 
             src="https://giphy.com/embed/gHWT7cA7rRxwagVsPa" 
-            width="480" 
-            height="271" 
+            width="1500" 
+            height="500" 
             frameBorder="0" 
             className="giphy-embed" 
             allowFullScreen>
@@ -31,8 +58,8 @@ const Home = () => {
         <div className="giphy-container">
           <iframe 
             src="https://giphy.com/embed/Sl1PEQk8fKeqcPDCEl" 
-            width="480" 
-            height="271" 
+            width="700" 
+            height="400" 
             frameBorder="0" 
             className="giphy-embed" 
             allowFullScreen>
@@ -54,8 +81,8 @@ const Home = () => {
         <div className="giphy-container">
         <iframe 
           src="https://giphy.com/embed/8sJgpqqYTlOPm" 
-          width="480" 
-          height="271" 
+          width="700" 
+          height="400" 
           frameBorder="0" 
           className="giphy-embed" 
           allowFullScreen>
@@ -76,14 +103,14 @@ const Home = () => {
       <div className="giphy-container">
         <iframe 
           src="https://giphy.com/embed/irSg1eFKZVIfkh958u"  
-          width="480" 
-          height="271" 
+          width="500" 
+          height="500" 
           frameBorder="0" 
           className="giphy-embed" 
           allowFullScreen>
         </iframe>
         <Link to="product">
-          <div data-tooltip="Price: $700" className="button">
+          <div className="button">
             <div className="button-wrapper">
               <div className="text">Buy Now</div>
               <span className="icon">
