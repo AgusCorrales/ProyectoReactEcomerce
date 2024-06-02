@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.scss'; // Asegúrate de tener un archivo de estilos CSS o SCSS para el footer
-import { FacebookOutlined, InstagramOutlined, XOutlined } from '@ant-design/icons';
+import './Footer.scss'; 
+
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h5>About Us</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Welcome to AgusShop, your go-to destination for all your online shopping needs. We strive to provide you with a seamless shopping experience, offering high-quality products at affordable prices.</p>
         </div>
         <div className="footer-section">
           <h5>Contact Us</h5>

@@ -19,7 +19,7 @@ body {
     margin-bottom: 2rem;
 
     button {
-      background-color: #e82127;
+      background-color: #333;
       color: #ffffff;
       border: none;
       padding: 0.5rem 1rem;
@@ -27,9 +27,10 @@ body {
       cursor: pointer;
       font-size: 1rem;
       margin-right: 1rem; /* Add margin between buttons */
+      transition: transform 0.3s ease;
 
       &:hover {
-        background-color: #c1171e;
+        transform: translateY(-2px);
       }
     }
 
@@ -45,7 +46,7 @@ body {
     justify-content: center;
 
     .product-card {
-      background: #ffffff;
+      //background: #ffffff;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 1rem;

@@ -4,14 +4,14 @@ import Product from '../Product/Product'
 
 
 const Products = () => {
-    const {getProducts} = useContext(ProductContext)
+    const { getProducts } = useContext(ProductContext)
 
-    useEffect(()=>{
+    useEffect(() => {
         getProducts()
-    },[])
-  return (
-    <div><Product/></div>
-  )
+    }, [])
+    return (
+        <div><Product /></div>
+    )
 }
 
 export default Products
