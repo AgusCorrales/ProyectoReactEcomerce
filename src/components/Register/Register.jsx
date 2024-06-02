@@ -5,7 +5,7 @@ import { UserContext } from '../../contex/UserContex/UserState';
 
 const Register = () => {
 const { register } = useContext(UserContext);
-const [Form] = Form.useForm();
+const [form] = Form.useForm();
 
 const navigate = useNavigate();
 

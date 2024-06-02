@@ -1,0 +1,18 @@
+.form-container {
+    display: flex;
+    justify-content: center; // Centra horizontalmente
+    align-items: center; // Centra verticalmente
+    height:70vh; // Hace que el contenedor ocupe toda la altura de la ventana
+    margin: 0; // Resetea cualquier margen que pudiera interferir
+}
+// SCSS
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; // Ajusta este valor según sea necesario para más separación
+}
+
+.button-container .ant-btn {
+    margin-right: 5px; // Ajusta este valor según sea necesario
+}
+

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { notification } from 'antd';
 import { UserContext } from '../../contex/UserContex/UserState';
 import { useContext } from 'react';
+import './Login.scss'
 
 
 const Login = () => {
@@ -25,7 +26,7 @@ const Login = () => {
      
 
   return (
-    <div>
+    <div className='form-container'>
       <Form
         name="basic"
         labelCol={{
@@ -80,10 +81,12 @@ const Login = () => {
             span: 16,
           }}
         >
+        <div className='button-container'>
           <Button type="primary" htmlType="submit">
             Submit
           </Button>
-          Or <a href="/register">Register now!</a>
+          Or <a href="/register"> Register now!</a>
+        </div>  
         </Form.Item>
 
       </Form>
