@@ -13,7 +13,6 @@ const Login = () => {
     const navigate = useNavigate()
     const onFinish = async (values) => {
         await login(values)
-        console.log(user);
         navigate("/profile")
         notification.success({
             message: 'Welcome'

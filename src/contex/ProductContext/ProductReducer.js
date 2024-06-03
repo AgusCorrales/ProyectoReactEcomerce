@@ -5,19 +5,19 @@ const products = (state, action) => {
         ...state,
         products: action.payload,
       };
-     case "ADD_CART":
-       return {
-         ...state,
-         cart: [...state.cart, action.payload],
-       };
-     case "CLEAR_CART":
-       return {
-         ...state,
-         cart: [],
-     };
-     default:
-       return state;
-   }
+    case "ADD_CART":
+      return {
+        ...state,
+        cart: [...state.cart, action.payload],
+      };
+    case "CLEAR_CART":
+      return {
+        ...state,
+        cart: [],
+      };
+    default:
+      return state;
+  }
 };
 
 
