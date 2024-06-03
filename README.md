@@ -55,27 +55,5 @@ Esta aplicación de e-commerce permite a los usuarios navegar por productos, añ
 
 ## Estructura del Proyecto
 
-/src
-|-- /components
-|   |-- Header.js
-|   |-- Home.js
-|   |-- Product.js
-|   |-- Profile.js
-|   |-- Register.js
-|   |-- Login.js
-|-- /context
-|   |-- /UserContext
-|   |   |-- UserState.js
-|   |   |-- UserReducer.js
-|   |-- /ProductContext
-|       |-- ProductState.js
-|       |-- ProductReducer.js
-|-- /styles
-|   |-- Header.scss
-|   |-- Home.scss
-|   |-- Product.scss
-|   |-- Profile.scss
-|   |-- Register.scss
-|-- App.js
-|-- index.js
+<img width="708" alt="Captura de pantalla 2024-06-03 a la(s) 2 01 45" src="https://github.com/AgusCorrales/ProyectoReactEcomerce/assets/162991987/efa2cf6d-0f47-425d-9b1d-ed2777d1eca6">
 
