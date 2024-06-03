@@ -1,7 +1,5 @@
 # Proyecto de E-Commerce
 
-
-Proyecto de E-Commerce
 Este proyecto es una aplicación de e-commerce construida con React y varios contextos de estado para manejar usuarios y productos. La aplicación permite a los usuarios registrarse, iniciar sesión, ver productos, añadir productos al carrito y gestionar su perfil y pedidos.
 
 ## Descripción
