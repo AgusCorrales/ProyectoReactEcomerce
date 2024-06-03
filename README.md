@@ -30,27 +30,37 @@ Esta aplicación de e-commerce permite a los usuarios navegar por productos, añ
 ## Uso
 ### Registro
 1- Accede a la página de registro desde la barra de navegación.
+
 2- Rellena el formulario con tu información personal.
+
 3- Haz clic en el botón "Register" para crear tu cuenta.
 
 ### Inicio de Sesión
 1 Accede a la página de inicio de sesión desde la barra de navegación.
+
 2 Rellena el formulario con tu correo electrónico y contraseña.
+
 3 Haz clic en el botón "Login" para acceder a tu cuenta.
 
 ### Navegar Productos
 1 Accede a la página principal para ver los productos destacados.
+
 2 Utiliza la barra de búsqueda para encontrar productos específicos.
+
 3 Haz clic en un producto para ver más detalles y añadirlo al carrito.
 
 ### Carrito de Compras
 1 Accede a la página del carrito desde la barra de navegación.
+
 2 Revisa los productos añadidos y su precio total.
+
 3 Procede con la compra o sigue navegando para añadir más productos.
 
 ### Perfil de Usuario
 1 Accede a la página de perfil desde la barra de navegación.
+
 2 Revisa y actualiza tu información personal.
+
 3 Ve tus pedidos y el estado de los mismos.
 
 ## Estructura del Proyecto
